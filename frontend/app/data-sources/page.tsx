@@ -208,7 +208,7 @@ export default function DataSourcesPage() {
     try {
       setError("");
       const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:8000"}/api/hazards`,
+      `${"http://127.0.0.1:8000"}/api/hazards`,
       {
         cache: "no-store",
       });
